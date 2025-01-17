@@ -1,0 +1,70 @@
+<%- layout("layouts/boilerplate") %>
+
+
+    <body>
+
+        <h3>specefic content</h3>
+        <ul>
+            <li>
+                <%= contents.titel%>
+            </li>
+            <li>
+                <%= contents.discription%>
+            </li>
+            <li>
+                <%= contents.img%>
+            </li>
+            <li>
+                <%= contents.dateofcreated%>
+            </li>
+        </ul>
+
+
+        <form action="/blogs/edit/<%= contents._id%>" method="get">
+            <button>edit</button>
+        </form>
+
+
+        <form action="/blogs/delete/<%= contents._id%>?_method=delete" method="post">
+            <button>delete</button>
+        </form>
+
+
+
+
+        <div>
+
+            <h1>comments</h1>
+            <form action="/blogs/addcomment/<%= contents._id%>" method="post">
+                <label for="">comment</label>
+                <input type="text" name="comments[comment]">
+                <br>
+                <label for="">Rating</label>
+                <input type="range" min="1" max="5" name="comments[rating]">
+                <br>
+                <button>Submit</button>
+            </form>
+
+<div>
+
+    <% for(let content of contents.comment){ %>
+
+
+        <ul>
+        <li><%=content.comment%></li></a>   
+        <li><%=content.rating%></li></a>
+        </ul>
+
+        <% } %>
+
+
+
+
+
+</div>
+
+
+        </div>
+
+
+    </body>

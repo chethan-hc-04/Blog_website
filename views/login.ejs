@@ -1,0 +1,19 @@
+<%- layout("layouts/boilerplate")%>
+
+
+<body>
+    <h4>log in</h4><br>
+
+
+    <form action="/user/validateuser" method="post">
+<label for="">email</label>
+<input type="text" name="user[email]"><br>
+<label for="">password</label>
+<input type="password" name="user[password]"><br>
+
+<button>login</button>
+
+
+</form>
+
+</body>

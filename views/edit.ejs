@@ -1,0 +1,28 @@
+<%- layout("layouts/boilerplate") %>
+
+
+<body>
+    <h1>this is edit page of <%= contents.titel%></h1>
+
+
+        <form action="/blogs/edit/<%= contents._id %>?_method=PUT" method="post">
+
+            <label for="">titel</label>
+            <input type="text" name="content[titel]" value=" <%= contents.titel%>">
+            <br><br>
+
+            <label for="">Discription</label>
+            <input type="text" name="content[discription]" value="<%= contents.discription%>">
+            <br><br>
+            
+            <label for="">img url</label>
+            <input type="text" name="content[img]" value="<%= contents.img%>">
+            <br><br>
+
+            <button>edit</button>
+
+        </form>
+
+
+
+</body>

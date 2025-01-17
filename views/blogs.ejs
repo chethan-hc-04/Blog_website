@@ -1,0 +1,18 @@
+<%- layout("layouts/boilerplate") %>
+<body>
+    <h3>all blogs</h3>
+
+
+
+    <% for(let content of allcontents){ %>
+
+
+        <ul>
+         <a href="/blogs/showblogs/<%=content._id%>"><li><%=content.titel%></li></a>   
+        </ul>
+
+        <% } %>
+
+
+
+</body>
