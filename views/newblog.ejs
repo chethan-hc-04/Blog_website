@@ -1,35 +1,33 @@
-<%- layout("layouts/boilerplate") %>
-
+<% layout("layouts/boilerplate") %>
 
     <body>
 
+
         <div class="cont">
             <div class="crateblog">
-                <h1>This is Edit page of <%= contents.titel%>
-                </h1>
+                <h1>Creat your Blogs</h1>
 
-                <form action="/blogs/edit/<%= contents._id %>?_method=PUT" method="post">
+                <form action="/blogs/addcontent" method="post">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Titel</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            required name="content[titel]" value=" <%= contents.titel%>">
+                            required name="content[titel]">
 
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Discription</label>
                         <input type="text" required name="content[discription]" class="form-control"
-                            id="exampleInputPassword1" value="<%= contents.discription%>">
+                            id="exampleInputPassword1">
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">img-url</label>
-                        <input type="text" required name="content[img]" class="form-control" id="exampleInputPassword1"
-                            value="<%= contents.img%>">
+                        <input type="text" required name="content[img]" class="form-control" id="exampleInputPassword1">
                     </div>
 
 
 
-                    <button type="submit" class="btn btn-primary">edit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
 
             </div>

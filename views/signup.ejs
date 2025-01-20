@@ -3,23 +3,29 @@
 
 <body>
     
-    <h4>sign-up page</h4><br>
+<div class="loginbody">
+    <div class="login-container">
+        <h2>Sign-Up</h2>
+        <form action="/user/adduser" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="user[name]" placeholder="Enter your username" required>
 
-<form action="/user/adduser" method="post">
+            <label for="username">Email</label>
+            <input type="text" id="username" name="user[email]" placeholder="Enter your email" required>
 
+            <label for="password">Password</label>
+            <input type="password" id="password" name="user[password]" placeholder="Enter your password"
+                required>
 
+            <button type="submit">Sign-Up</button>
+        </form>
+        <div class="forgot-password">
+            <a href="/user/login">Log-In</a>
+        </div>
+    </div>
 
+</div>
 
-<label for="">user name</label>
-<input type="text" required name="user[name]"><br>
-<label for="">email</label>
-<input type="text"required name="user[email]"><br>
-<label for="">password</label>
-<input type="password" required name="user[password]"><br>
-
-<button>sig-up</button>
-
-</form>
 
 
 </body>

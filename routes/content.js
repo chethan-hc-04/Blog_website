@@ -3,11 +3,12 @@ const router = express.Router();
 
 const Content = require("../module/content.js");
 const Comment = require("../module/comment.js");
+const User = require("../module/users.js");
 
 
 
 router.get("/", (req, res) => {
-    res.render("home");
+    res.render("blogs");
 })
 
 
@@ -17,15 +18,15 @@ router.post("/addcontent", async (req, res, next) => {
     try {
         const newcontent = new Content(req.body.content);
 
-        newcontent.createdby=req.user._id;
+        newcontent.createdby = req.user._id;
 
         await newcontent.save().then(() => {
             console.log(newcontent);
-           
+
 
         }).catch((err) => {
             console.log(err);
-        })       
+        })
 
     } catch (err) {
         next(err);
@@ -39,8 +40,8 @@ router.post("/addcontent", async (req, res, next) => {
 
 router.get("/allcontents", async (req, res) => {
 
-const id=req.user._id;
-    const allcontents = await Content.find({'createdby': id});
+    const id = req.user._id;
+    const allcontents = await Content.find({ 'createdby': id });
 
     res.render("blogs", { allcontents });
 
@@ -110,12 +111,29 @@ router.post("/addcomment/:id", async (req, res, next) => {
 
 router.get("/profile", async (req, res) => {
 
-    
-    res.render("profile");
+    const id = req.user._id;
+
+    const userdetail = await User.findById( id );
+
+    console.log(userdetail);
+
+    res.render("profile", { userdetail });
 
 
 
 })
+
+
+
+router.get("/newblog", async (req, res) => {
+
+
+    res.render("newblog");
+
+
+
+})
+
 
 
 

@@ -1,7 +1,18 @@
 <%- layout("layouts/boilerplate")%>
 
 
-<body>
-   <h1>this is profile</h1>
+   <body>
+      <div class="profilebody">
+         <div class="profile-container">
+            <img src="https://via.placeholder.com/120">
+            <h1><%=userdetail.name%></h1>
+            <h2 style="font-size:medium; font-family: Arial, sans-serif;"><b>email:</b> <%=userdetail.email%></h2>
+            <form action="/user/logout" method="get">
 
-</body>
+               <button class="logoutbtn">Logout</button>
+            </form>
+            
+            
+         </div>
+      </div>
+   </body>

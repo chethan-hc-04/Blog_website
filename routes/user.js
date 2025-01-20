@@ -55,14 +55,17 @@ router.post("/validateuser", async (req, res, next) => {
         setUser(sessionId, userlogin);
         res.cookie("uid", sessionId);
 
-        res.redirect("/blogs");
+        res.redirect("/blogs/allcontents");
 
     }
 
 
 })
 
-
+router.get('/logout', (req, res) => {
+    res.clearCookie('uid'); // Clear the session cookie
+    res.redirect("/user/login");
+});
 
 
 

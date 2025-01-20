@@ -17,9 +17,10 @@ body{
 
 }
 
-.fa-compass {
-    color: #fe424d;
-    font-size: 2rem;
+.fa-blogger {
+    color: #007BFF;
+    font-size: 3rem;
+    padding: 20px;
 }
 
 .nav-link {
@@ -28,9 +29,7 @@ body{
 
 
 /* ------footer--------- */
-.f-info{
-    margin-bottom: 100px;
-}
+
 
 .f-info-links a {
 
@@ -111,19 +110,9 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-/* new page */
-.add-btn{
-    background-color: #fe424d !important;
-    border: none !important;
-}
 
 
-/* edit button */
 
-.edit-btn{
-    background-color: #fe424d !important;
-    border: none !important;
-}
 
 
 
@@ -149,3 +138,334 @@ body{
 .show-card{
     padding: 0;
 }
+
+
+/* crateblog */
+.crateblog{
+    width: 800px;
+    height: 400px;
+   
+
+
+}
+.cont{
+    padding: 100px;
+
+}
+
+
+
+.profilehead{
+    height: 20rem;
+    background-color: #d3cccc;
+
+}
+
+
+
+/* profile  */
+
+.profilebody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    height: 400px;
+}
+
+.profile-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #007BFF;
+}
+
+.profile-container h1 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #4caf50;
+}
+
+.profile-container p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.logoutbtn{
+    background-color: rgb(150, 37, 37);
+color: #f4f4f9;
+border-radius: 1px;
+margin-top: 2rem;
+}
+
+
+
+/* login */
+
+.loginbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #007BFF;
+}
+
+.login-container .forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container .forgot-password a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.login-container .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+/* show card  */
+
+.showimg{
+    width: 600px;
+    height: 300px;
+  border-radius: 20px;
+}
+
+.showbody {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.blog-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.blog-content {
+    font-size: 1.1em;
+    color: #555;
+}
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.read-more:hover {
+    background: #0056b3;
+}
+
+/* comeent  */
+
+.commentbody {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .containerr {
+    max-width: 1330px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  header h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .comment-form,
+  .comments-section {
+    margin-bottom: 20px;
+  }
+  
+  .comment-form h2,
+  .comments-section h2 {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  form button:hover {
+    background: #0056b3;
+  }
+  
+  .comments-section .comment {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  .comments-section .comment h3 {
+    margin: 0 0 5px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .comments-section .comment p {
+    margin: 0;
+    color: #666;
+  }
+  
+  /* comment card  */
+
+  .comment-card {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .comment-content {
+    flex: 1;
+  }
+  
+  .comment-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .comment-content p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .timestamp {
+    font-size: 0.9rem;
+    color: #888;
+  }
+
