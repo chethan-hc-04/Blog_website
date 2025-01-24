@@ -51,9 +51,9 @@ router.post("/validateuser", async (req, res, next) => {
         res.render("login")
     }
     else {
-        const sessionId = uuidv4();
-        setUser(sessionId, userlogin);
-        res.cookie("uid", sessionId);
+        
+       const token= setUser(userlogin);
+        res.cookie("uid", token);
 
         res.redirect("/blogs/allcontents");
 
