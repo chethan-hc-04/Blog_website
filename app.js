@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require("express");
 const app = express();
 
@@ -19,14 +21,14 @@ app.use(express.urlencoded({ extended: true }));
 
 const mongoose = require('mongoose');
 
-
+const PORT=process.env.PORT||3000;
 
 const contentsrouter=require("./routes/content.js");
 const userrouter=require("./routes/user.js");
 
-
+//'mongodb://localhost:27017/mydatabase'
 async function main() {
-    await mongoose.connect('mongodb://localhost:27017/mydatabase');
+    await mongoose.connect(process.env.MONGO_URL);
 }
 main()
     .then(() => {
@@ -47,6 +49,6 @@ app.use("/user",userrouter);
 
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log("listening on port 3000");
 });

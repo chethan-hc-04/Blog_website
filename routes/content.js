@@ -48,6 +48,18 @@ router.get("/allcontents", async (req, res) => {
 
 })
 
+router.get("/everycontents", async (req, res) => {
+
+    
+    const evrycontents = await Content.find();
+
+    res.render("allblogs", { evrycontents });
+
+
+})
+
+
+
 router.get("/showblogs/:id", async (req, res) => {
 
     const { id } = req.params;
